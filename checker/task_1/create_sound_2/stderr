@@ -1,0 +1,4 @@
+QStandardPaths: wrong permissions on runtime directory /run/user/1000/, 0755 instead of 0700
+error: operator -: nonconformant arguments (op1 is 192000x1, op2 is 201601x1)
+error: called from
+    run_test at line 17 column 10

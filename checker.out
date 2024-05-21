@@ -1,0 +1,79 @@
+
+================================================================================
+The Numerical Methods team reserves its right to change your final score in case
+anything suspicious is found in the source code.
+
+Please refer to the course's guidelines for more info.
+================================================================================
+
+Task 1. Numerical Music (MN vatz prins?)
+----------------------------------------
+
+[stereo_to_mono_1]: 0p / 1p (WA)
+[stereo_to_mono_2]: 1p / 1p (OK)
+[stereo_to_mono_3]: 0p / 2p (WA)
+[spec_1]: 0p / 1p (WA)
+[spec_2]: 0p / 1p (WA)
+[spec_3]: 0p / 1p (WA)
+[spec_4]: 0p / 1p (WA)
+[spec_5]: 0p / 1p (WA)
+[osc_1]: 0p / 1p (WA)
+[osc_2]: 0p / 1p (WA)
+[osc_3]: 0p / 1p (WA)
+[create_sound_1]: 0p / 1p (WA)
+[create_sound_2]: 0p / 1p (WA)
+[lowpass_1]: 0p / 1p (WA)
+[lowpass_2]: 0p / 1p (WA)
+[lowpass_3]: 0p / 3p (WA)
+[reverb_1]: 0p / 1p (WA)
+[reverb_2]: 0p / 1p (WA)
+[reverb_3]: 0p / 3p (WA)
+[complex_1]: 0p / 3p (WA)
+[complex_2]: 0p / 3p (WA)
+
+=> TOTAL: 1p / 30p
+
+
+Task 2. Robotzii
+----------------
+
+[parse-data-1]: 0p / 1p (WA)
+[parse-data-2]: 0p / 1p (WA)
+[parse-data-3]: 0p / 1p (WA)
+[parse-data-4]: 0p / 1p (WA)
+[spline-c2-1]: 0p / 2p (WA)
+[spline-c2-2]: 0p / 2p (WA)
+[spline-c2-3]: 0p / 2p (WA)
+[p_spline-1]: 0p / 2p (WA)
+[p_spline-2]: 0p / 2p (WA)
+[p_spline-3]: 0p / 3p (WA)
+[vandermonde-1]: 0p / 3p (WA)
+[vandermonde-2]: 0p / 3p (WA)
+[p_vandermonde-1]: 0p / 3p (WA)
+[p_vandermonde-2]: 0p / 4p (WA)
+
+=> TOTAL: 0p / 30p
+
+
+Task 3. Recommendations
+-----------------------
+
+[read_mat_1]: 1p / 1p (OK)
+[read_mat_2]: 1p / 1p (OK)
+[preprocess_1]: 1p / 1p (OK)
+[preprocess_2]: 1p / 1p (OK)
+[cosine_similarity_1]: 1p / 1p (OK)
+[cosine_similarity_2]: 2p / 2p (OK)
+[cosine_similarity_3]: 2p / 2p (OK)
+[recommendations_1]: 5p / 5p (OK)
+[recommendations_2]: 5p / 5p (OK)
+[recommendations_3]: 5p / 5p (OK)
+[recommendations_4]: 6p / 6p (OK)
+
+=> TOTAL: 30p / 30p
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+FINAL SCORE: 31p / 90p
+Up to 10p can be awarded for providing a good README and clean code!
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+
