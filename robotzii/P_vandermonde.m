@@ -3,11 +3,9 @@ function y_interp = P_vandermonde (coef, x_interp)
 	% coef = [a0, a1, a2, ..., an]'
 	% y_interp(i) = P_vandermonde(x_interp(i)), i = 0 : length(x_interp) - 1
 	n = length(coef);
-	
 	m = length(x_interp);
-
 	V = zeros(m, n);
-
+	% Formez matricea Vandermond pentru punctele de interpolare
 	for i = 1:m
 		for j = 1:n
 			V(i, j) = x_interp(i)^(j-1);
@@ -15,5 +13,5 @@ function y_interp = P_vandermonde (coef, x_interp)
 	endfor
 
 	y_interp = V * coef;
-	% TODO: Calcualte y_interp using the Vandermonde coefficients
+	% Calculez valorile interpolate y_interp folosind coeficinetii polinomului
 end

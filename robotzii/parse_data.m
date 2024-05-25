@@ -1,17 +1,14 @@
 function [x, y] = parse_data(filename)
-    % file input format:
-    % n
-    % x0 x1 ... xn
-    % y0 y1 ... yn
 
-    % TODO 1: Open the file for reading
+    % deschid fisierul pentru citire
     file = fopen(filename, 'r');
-    % TODO 2: Read n, x, y from the file
+    % citesc numarul de elemente si cei doi vectori din fisier
     n = fscanf(file, '%d', 1);
     x = fscanf(file, '%d', n + 1);
     y = fscanf(file, '%d', n + 1);
+    % transpun vectorii pentru a fi coloane
     x = x';
     y = y';
-    % TODO 3: Close the file
+    % inchid fisierul de citire
     fclose(file);
 end

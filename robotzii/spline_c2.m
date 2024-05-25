@@ -11,16 +11,17 @@ function coef = spline_c2 (x, y)
 
 	A = zeros(4 * (n - 1), 4 * (n - 1));
 	b = zeros(4 * (n - 1), 1);
+	% initializez matricea A si vectorul b pentru a forma sistemul de ecuatii
 
 	cnt = 1;
-	% TOOD 1: si(xi) = yi, i = 0 : n - 1
+	% pasul: si(xi) = yi, i = 0 : n - 1
 	for i = 1 : n - 1
 		A(cnt, (i - 1)*4 + 1) = 1;
 		b(cnt) = y(i);
 		cnt = cnt + 1;
 	endfor
 
-	% TODO 2: s_n-1(xn) = yn
+	% pasul: s_n-1(xn) = yn
 	A(cnt, (n - 2)*4 + 1) = 1;
 	A(cnt, (n - 2)*4 + 2) = (x(n) - x(n-1));
 	A(cnt, (n - 2)*4 + 3) = (x(n) - x(n-1))^2;
@@ -28,7 +29,7 @@ function coef = spline_c2 (x, y)
 	b(cnt) = y(n);
 	cnt = cnt + 1;
 
-	% TODO 3: si(x_i+1) = s_i+1(x_i+1), i = 0 : n - 1
+	% pasul 3: si(x_i+1) = s_i+1(x_i+1), i = 0 : n - 1
 	for i = 1:n-2
 		A(cnt, (i - 1) * 4 + 1) = 1;
 		A(cnt, (i - 1) * 4 + 2) = (x(i + 1) - x(i));
@@ -39,7 +40,7 @@ function coef = spline_c2 (x, y)
 		cnt = cnt + 1;
 	endfor
 
-	% TODO 4: si'(x_i+1) = s_i+1'(x_i+1), i = 0 : n - 1
+	% pasul 4: si'(x_i+1) = s_i+1'(x_i+1), i = 0 : n - 1
 	for i = 1:n - 2
 		A(cnt, (i - 1) * 4 + 2) = 1;
 		A(cnt, (i - 1) * 4 + 3) = 2 * (x(i + 1) - x(i));
@@ -49,7 +50,7 @@ function coef = spline_c2 (x, y)
 		cnt = cnt + 1;
 	endfor
 
-	% TODO 5: si''(x_i+1) = s_i+1''(x_i+1), i = 0 : n - 1
+	% pasul 5: si''(x_i+1) = s_i+1''(x_i+1), i = 0 : n - 1
 	for i = 1:n - 2
 		A(cnt, (i - 1) * 4 + 3) = 2;
 		A(cnt, (i - 1) * 4 + 4) = 6 * (x(i + 1) - x(i));
@@ -58,17 +59,17 @@ function coef = spline_c2 (x, y)
 		cnt = cnt + 1;
 	endfor
 
-	% TODO 6: s0''(x0) = 0
+	% pasul 6: s0''(x0) = 0
 	A(cnt, 3) = 2;
 	b(cnt) = 0;
 	cnt = cnt + 1;
 
-	% TODO 7: s_n-1''(x_n) = 0
+	% pasul 7: s_n-1''(x_n) = 0
 	A(cnt, (n - 2)*4 + 3) = 2;
 	A(cnt, (n - 2)*4 + 4) = 6 * (x(n) - x(n-1));
 	b(cnt) = 0;
 
-	% Solve the system of equations
+	% rezolv sistemul de ecuatii
 	coef = A \ b;
 	coef = coef';
 end
