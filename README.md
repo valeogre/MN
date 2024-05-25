@@ -1,6 +1,11 @@
 Tema 2 - Metode Numerice
 
 Task1 - Numerical Music
+Funcții
+1. stereo_to_mono(stereo)
+Convertește un semnal audio stereo într-un semnal mono prin medierea canalelor.
+2. apply_reverb(signal, impulse_response)
+Aplică un efect de reverb unui semnal audio folosind convoluția cu un răspuns impuls.
 
 Task2 - Robotzii
 Acest task implică simularea părții autonome a mișcării unui robot pe un teren bidimensional. 
