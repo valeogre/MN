@@ -1,4 +1,4 @@
 function similarity = cosine_similarity(A, B)
-  # TODO: Compute the cosine similarity between two column vectors.
+  % folosind produsul scalar si normele celor doi vectori calculeaza similiaritatea cosinus
   similarity = dot(A, B) / (norm(A) * norm(B));
 end
